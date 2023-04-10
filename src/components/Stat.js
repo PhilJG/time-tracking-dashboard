@@ -2,10 +2,14 @@
 import data from '../data.json'
 
 
-export default function Stat() {
+export default function Stat({ recurrance }) {
 
+    // recurrence === timeframe.r  
     // const setOccurance = function () {
-    //     if recurrence === timeframe.r  then set timeframes to r in statDetails
+    //     // then set timeframes to r in statDetails
+    // }
+
+    // alert(recurrance)
 
     const statDetails = data.map(detail =>
         <div className={`container-tab ${detail.title}`}>
@@ -13,11 +17,11 @@ export default function Stat() {
             <section className="section-stats flex">
                 <div className="current-stat">
                     <h1>{detail.title}</h1>
-                    <h1>Current {detail.timeframes.daily.current}</h1>
+                    <h1>Current {detail.timeframes[recurrance].current}</h1>
                 </div>
                 <div className="last-week-stat">
                     {/* <img src={svg}></img> */}
-                    <p>Last Week {detail.timeframes.daily.current}</p>
+                    <p>Last Week {detail.timeframes[recurrance].previous}</p>
                 </div>
             </section>
         </div>

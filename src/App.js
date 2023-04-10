@@ -4,9 +4,9 @@ import Profile from './components/Profile';
 import Stat from './components/Stat';
 
 function App() {
-  const [recurrance, setRecurrance] = useState('Weekly')
+  const [recurrance, setRecurrance] = useState('weekly')
 
-  const recurring = ["Daily", "Weekly", "Monthly"]
+  const recurring = ["daily", "weekly", "monthly"]
 
   const rBtns = recurring.map(rec =>
     <button className='time-selection' onClick={() => rec !== recurrance ? setRecurrance(rec) : null}> {rec}</button >
@@ -20,7 +20,8 @@ function App() {
           {rBtns}
         </section>
       </div>
-      <Stat className="grid" />
+      <Stat className="grid"
+        recurrance={recurrance} />
       {/* <Stat className="work" />
       <Stat className="play" />
       <Stat className="study" />

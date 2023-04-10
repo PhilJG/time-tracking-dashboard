@@ -116,6 +116,7 @@ section {
   background-color: var(--Blue);
   align-items: center;
   border-radius: 30px;
+  height: 100%
 }
 
 .details {
@@ -151,4 +152,25 @@ section {
   color: hsl(228, 45%, 44%);
 }
 
-/* @media screen (max-width: 450px) {} */
+@media only screen and (max-width: 600px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+      "profile"
+      "work"
+      "play"
+      "study"
+      "exercise"
+      "social"
+      "self-care"
+
+      /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+
+  }
+}
