@@ -47,56 +47,56 @@ section {
 }
 
 .App {
-  /* display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
     "profile work play study"
-    "profile exercise social self-care"; */
+    "profile exercise social self-care";
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-row-gap: 0px; */
 
 }
 
 .profile {
-  /* grid-area: profile; */
-  grid-area: 1 / 1 / 3 / 2;
+  grid-area: profile;
+  /* grid-area: 1 / 1 / 3 / 2; */
 }
 
-.work {
-  /* grid-area: work; */
-  grid-area: 1 / 2 / 2 / 3;
+.Work {
+  grid-area: work;
+  /* grid-area: 1 / 2 / 2 / 3; */
 }
 
-.play {
-  /* grid-area: play; */
-  grid-area: 1 / 3 / 2 / 4;
+.Play {
+  grid-area: play;
+  /* grid-area: 1 / 3 / 2 / 4; */
 }
 
-.study {
-  /* grid-area: study; */
-  grid-area: 1 / 4 / 2 / 5;
+.Study {
+  grid-area: study;
+  /* grid-area: 1 / 4 / 2 / 5; */
 
 }
 
-.exercise {
-  /* grid-area: exercise; */
-  grid-area: 2 / 2 / 3 / 3;
+.Exercise {
+  grid-area: exercise;
+  /* grid-area: 2 / 2 / 3 / 3; */
 }
 
-.social {
-  /* grid-area: social; */
-  grid-area: 2 / 3 / 3 / 4;
+.Social {
+  grid-area: social;
+  /* grid-area: 2 / 3 / 3 / 4; */
 }
 
-.self-care {
-  /* grid-area: self-care; */
-  grid-area: 2 / 4 / 3 / 5;
+.Self-care {
+  grid-area: self-care;
+  /* grid-area: 2 / 4 / 3 / 5; */
 }
 
 
