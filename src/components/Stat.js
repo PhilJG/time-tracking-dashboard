@@ -4,6 +4,9 @@ import data from '../data.json'
 
 export default function Stat() {
 
+    // const setOccurance = function () {
+    //     if recurrence === timeframe.r  then set timeframes to r in statDetails
+
     const statDetails = data.map(detail =>
         <div className={`container-tab ${detail.title}`}>
             <img className="svg-style" alt={detail.title}></img>
@@ -20,8 +23,9 @@ export default function Stat() {
         </div>
     );
     return (
-        <div className="container">
+        <>
             {statDetails}
-        </div>
+        </>
+
     )
 }

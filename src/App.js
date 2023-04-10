@@ -1,12 +1,26 @@
 import './App.css';
+import { useState } from 'react'
 import Profile from './components/Profile';
 import Stat from './components/Stat';
 
 function App() {
+  const [recurrance, setRecurrance] = useState('Weekly')
+
+  const recurring = ["Daily", "Weekly", "Monthly"]
+
+  const rBtns = recurring.map(rec =>
+    <button className='time-selection' onClick={() => rec !== recurrance ? setRecurrance(rec) : null}> {rec}</button >
+  )
+
   return (
     <div className="App">
-      <Profile className="profile" />
-      <Stat />
+      <div className='container profile'>
+        <Profile />
+        <section className='details flex'>
+          {rBtns}
+        </section>
+      </div>
+      <Stat className="grid" />
       {/* <Stat className="work" />
       <Stat className="play" />
       <Stat className="study" />
@@ -14,10 +28,10 @@ function App() {
       <Stat className="social" />
       <Stat className="self-care" /> */}
 
-      <div className="attribution">
+      {/* <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://philjgray.ca/">Phil J Gray</a>.
-      </div>
+      </div> */}
     </div>
   );
 }

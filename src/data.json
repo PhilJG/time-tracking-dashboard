@@ -1,6 +1,5 @@
 [
   {
-    "key": 1,
     "title": "Work",
     "timeframes": {
       "daily": {
@@ -18,7 +17,6 @@
     }
   },
   {
-    "key": 2,
     "title": "Play",
     "timeframes": {
       "daily": {
@@ -36,7 +34,6 @@
     }
   },
   {
-    "key": 3,
     "title": "Study",
     "timeframes": {
       "daily": {
@@ -54,7 +51,6 @@
     }
   },
   {
-    "key": 4,
     "title": "Exercise",
     "timeframes": {
       "daily": {
@@ -72,7 +68,6 @@
     }
   },
   {
-    "key": 5,
     "title": "Social",
     "timeframes": {
       "daily": {
@@ -90,7 +85,6 @@
     }
   },
   {
-    "key": 6,
     "title": "Self Care",
     "timeframes": {
       "daily": {
