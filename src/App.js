@@ -6,16 +6,17 @@ function App() {
   return (
     <div className="App">
       <Profile className="profile" />
-      <Stat className="work" title="Work" />
-      <Stat className="play" title="Play" />
-      <Stat className="study" title="Study" />
-      <Stat className="exercise" title="Exercise" />
-      <Stat className="social" title="Social" />
-      <Stat className="self-care" title="self-care" />
+      <Stat />
+      {/* <Stat className="work" />
+      <Stat className="play" />
+      <Stat className="study" />
+      <Stat className="exercise" />
+      <Stat className="social" />
+      <Stat className="self-care" /> */}
 
-      <div class="attribution">
+      <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://philjgray.ca/">Phil J Gray</a>.
       </div>
     </div>
   );
