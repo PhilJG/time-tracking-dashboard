@@ -74,32 +74,38 @@ section {
 
 .work {
   grid-area: work;
+  background-color: var(--Light-red-work);
   /* grid-area: 1 / 2 / 2 / 3; */
 }
 
 .play {
   grid-area: play;
+  background-color: var(--Soft-blue-play);
   /* grid-area: 1 / 3 / 2 / 4; */
 }
 
 .study {
   grid-area: study;
+  background-color: var(--Light-red-study);
   /* grid-area: 1 / 4 / 2 / 5; */
 
 }
 
 .exercise {
   grid-area: exercise;
+  background-color: var(--Lime-green-exercise);
   /* grid-area: 2 / 2 / 3 / 3; */
 }
 
 .social {
   grid-area: social;
+  background-color: var(--Violet-social);
   /* grid-area: 2 / 3 / 3 / 4; */
 }
 
-.self-care {
+.selfcare {
   grid-area: self-care;
+  background-color: var(--Soft-orange-self-care);
   /* grid-area: 2 / 4 / 3 / 5; */
 }
 
