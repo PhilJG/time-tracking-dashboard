@@ -9,13 +9,13 @@ import { ReactComponent as Study } from "../icons/icon-study.svg";
 import { ReactComponent as Work } from "../icons/icon-work.svg";
 
 const iconsMap = {
-    Ellipsis: <Ellipsis />,
-    Exercise: <Exercise />,
-    Play: <Play />,
-    SelfCare: <SelfCare />,
-    Social: <Social />,
-    Study: <Study />,
-    Work: <Work />,
+    Ellipsis: <Ellipsis className="svg-style" />,
+    Exercise: <Exercise className="svg-style" />,
+    Play: <Play className="svg-style" />,
+    SelfCare: <SelfCare className="svg-style" />,
+    Social: <Social className="svg-style" />,
+    Study: <Study className="svg-style" />,
+    Work: <Work className="svg-style" />,
 };
 
 export default function Stat({ recurrance, Icon }) {
@@ -41,11 +41,11 @@ export default function Stat({ recurrance, Icon }) {
                 {Icon}
                 <section className="section-stats flex">
                     <div className="current-stat">
-                        <h1>{detail.title}</h1>
-                        <h1>Current {detail.timeframes[recurrance].current}hrs</h1>
+                        <h3>{detail.title}</h3>
+                        <h1>{detail.timeframes[recurrance].current}hrs</h1>
                     </div>
-                    <div className="last-week-stat">
-                        {/* <SvgEllipsis /> */}
+                    <div className="last-week-stat flex">
+                        <Ellipsis class="ellipsis" />
                         <p>{setRText()} {detail.timeframes[recurrance].previous}hrs</p>
                     </div>
                 </section>
