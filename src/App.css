@@ -63,7 +63,7 @@ button {
   grid-template-areas:
     "profile work play study"
     "profile exercise social self-care";
-  padding: 1rem;
+  padding: 10rem;
 
   /* display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -141,6 +141,7 @@ button {
 .container-tab {
   border-radius: 30px;
   height: 70%;
+  flex-direction: column;
 }
 
 .section-stats {
@@ -148,10 +149,11 @@ button {
   background-color: var(--Dark-blue);
   border-radius: 20px;
   position: relative;
+  transform: translateY(50px);
 }
 
 .svg-style {
-  transform: translate(230px, 0px);
+  align-self: end;
 }
 
 .last-week-stat {
@@ -182,17 +184,15 @@ button {
       "study"
       "exercise"
       "social"
-      "self-care"
-
-      /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; */
-
+      "self-care";
+    padding: 1rem;
   }
 
-  .container-profile {
-    margin-left: 1rem;
+  .container {
+    width: 100%;
+  }
+
+  .container-tab {
+    width: 100%;
   }
 }

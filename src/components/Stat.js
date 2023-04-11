@@ -37,7 +37,7 @@ export default function Stat({ recurrance, Icon }) {
 
         // Render the icon component as an <img> element with an "alt" attribute
         return (
-            <div title={detail.title} className={`container-tab ${detail.title.toLowerCase()}`}>
+            <div title={detail.title} className={`container-tab flex ${detail.title.toLowerCase()}`}>
                 {Icon}
                 <section className="section-stats flex">
                     <div className="current-stat">
