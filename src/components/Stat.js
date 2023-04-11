@@ -34,7 +34,6 @@ export default function Stat({ recurrance, Icon }) {
         // Use the "title" property from data.json to find the corresponding icon component
         const Icon = iconsMap[detail.title];
 
-
         // Render the icon component as an <img> element with an "alt" attribute
         return (
             <div title={detail.title} className={`container-tab flex ${detail.title.toLowerCase()}`}>
