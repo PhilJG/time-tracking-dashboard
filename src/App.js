@@ -14,26 +14,16 @@ function App() {
 
   return (
     <div className="App">
-      <div className='container profile'>
-        <Profile />
-        <section className='details flex'>
-          {rBtns}
-        </section>
-      </div>
+      <Profile rBtns={rBtns} />
+
       <Stat className="grid"
         recurrance={recurrance} />
-      {/* <Stat className="work" />
-      <Stat className="play" />
-      <Stat className="study" />
-      <Stat className="exercise" />
-      <Stat className="social" />
-      <Stat className="self-care" /> */}
 
       {/* <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://philjgray.ca/">Phil J Gray</a>.
       </div> */}
-    </div>
+    </div >
   );
 }
 
